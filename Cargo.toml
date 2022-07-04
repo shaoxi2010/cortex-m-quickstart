@@ -8,18 +8,11 @@ version = "0.1.0"
 [dependencies]
 cortex-m = "0.7.4"
 cortex-m-rt = "0.7.1"
-cortex-m-semihosting = "0.3.7"
-panic-halt = "0.2.0"
-panic-semihosting = "0.5.6"
-embedded-hal = "0.2.7"
-nb = "0.1.2"
 
-[dependencies.stm32f1xx-hal]
-version = "0.8.0"
-features = ["stm32f103", "rt"]
+[dependencies.rtt-target]
+version = "0.3.1"
+features = ["cortex-m"]
 
-# Uncomment for the panic example.
-# panic-itm = "0.4.1"
 
 # Uncomment for the allocator example.
 # alloc-cortex-m = "0.4.0"
@@ -27,8 +20,8 @@ features = ["stm32f103", "rt"]
 # Uncomment for the device example.
 # Update `memory.x`, set target to `thumbv7em-none-eabihf` in `.cargo/config`,
 # and then use `cargo build --examples device` to build it.
-# [dependencies.stm32f3]
-# features = ["stm32f303", "rt"]
+# [dependencies.stm32f1]
+# features = ["stm32f103", "rt"]
 # version = "0.7.1"
 
 # this lets you use `cargo fix`!
